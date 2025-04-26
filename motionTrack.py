@@ -7,11 +7,8 @@ application.geometry("1000x600")
 titleText = tk.Label(application, text="Welcome to The Turret Defense System Software!", font=("Arial", 30))
 titleText.pack()
 
-
-
 def button_click_start():
     cap = cv2.VideoCapture(0)
-
     while True:
         ret, frame = cap.read()
 
